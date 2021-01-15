@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>感謝とユーモア</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container bs">
+
+    <!-- ============================== ここからheader ============================== -->
+    <header>
+      <div class="header_wrap">
+        <div class="headerlogo_wrap">
+          <h1><a href="index.html">感謝とユーモア</a></h1>
+        </div>
+        <div class="headernav_wrap">
+          <nav>
+            <ul>
+              <li><a href="css.html">CSS</a></li>
+              <li><a href="sass.html">SASS</a></li>
+              <li><a href="javascript.html">JavaScript</a></li>
+              <li><a href="ruby.html">Ruby</a></li>
+              <li><a href="rubyonrails.html">Ruby on Rails</a></li>
+              <li><a href="sql.html">SQL</a></li>
+              <li><a href="copycoding.html">模写コーディング</a></li>
+            </ul>
+            <div class="cf"></div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- ============================== ここからmain ============================== -->
+    <main class="code_main">
+      <div class="code_main_wrap">
+        <section class="code_sec sec_style">
+          <h2 class="h2_style">JavaScriptの基礎</h2>
+          <br>
+          <pre class="code_style">
+            <h3 class="h3_style">□ 変数の定義</h3><span class="og">
+                var name = 'Tom';
+                console.log('hello' + name);
+              </span>
+            </pre>
+
+            <pre class="code_style">
+              <h3 class="h3_style">□ データ型の種類</h3>
+              ①Number ②String ③Boolean ④Undefined ⑤Null ⑥Symbol
+              ※データ型の種類を調べる方法<span class="og">console.log(typeof variable);</span>で調べられる。
+              ※動的型付け言語という。
+            </pre>
+
+            <pre class="code_style">
+              <h3 class="h3_style">□ 関数</h3><span class="og">
+            function hello(</span>name <span class="og">) {</span>
+                
+                  let name = 'Code Mafia';
+                  console.log('hello' + name);
+                <span class="og">}</span>
+                
+               <span class="og">hello(</span>'Code Mafia'<span class="og">);</span>
+            </pre>
+
+        </section>
+
+        <section class="code_sec sec_style">
+          <h2 class="h2_style">Progete JavaScript Ⅰ</h2>
+          <br>
+          <pre class="code_style">
+            <h3 class="h3_style">□ 変数</h3><span class="og">
+              let name = </span>"にんじゃわんこ"<span class="og">;</span>
+          </pre>
+
+          <pre class="code_style">
+            <h3 class="h3_style">□ 定数</h3><span class="og">
+              const name = </span> "ひつじ仙人"<span class="og">;</span>
+                  ※constは上書きできない。
+          </pre>
+
+          <pre class="code_style">
+            <h3 class="h3_style">□ テンプレートリテラル</h3>
+            console.log(`私の名前は<span class="og">${name}</span>です`);
+          </pre>
+
+
+        </section>
+      </div>
+    </main>
+    <div class="cf"></div>
+
+    <!-- ============================== ここからfooter ============================== -->
+    <footer>
+      <div class="footer_wrap">
+        <p>@Tomonori Yoshimura</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
