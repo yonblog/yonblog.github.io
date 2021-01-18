@@ -171,7 +171,7 @@ header .header_wrap .headerlogo_wrap h1 a {
   font-weight: 700;
 }
 
-header .header_wrap .headerlogo_wrap .sp_menu_wrap {
+header .header_wrap .headerlogo_wrap .nav_invisible, header .header_wrap .headerlogo_wrap .sp_menu_wrap, header .header_wrap .headerlogo_wrap .nav_contents {
   display: none;
 }
 
@@ -351,8 +351,14 @@ css.html sass.html javascript.html ruby.html rubyonrails.html sql.html 共通
     height: auto;
     margin: 0 auto;
   }
+  header .header_wrap .headerlogo_wrap {
+    height: 200px;
+  }
   header .header_wrap .headerlogo_wrap h1 a {
-    font-size: 50px;
+    font-size: 70px;
+  }
+  header .header_wrap .headerlogo_wrap .nav_invisible {
+    display: none;
   }
   header .header_wrap .headerlogo_wrap .sp_menu_wrap {
     border: solid 1px #000000;
@@ -362,12 +368,36 @@ css.html sass.html javascript.html ruby.html rubyonrails.html sql.html 共通
     right: 5%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
+    cursor: pointer;
   }
   header .header_wrap .headerlogo_wrap .sp_menu_wrap .sp_menu {
-    width: 50px;
+    width: 80px;
     height: 4px;
     background-color: #000000;
-    margin: 15px;
+    margin: 30px;
+  }
+  header .header_wrap .headerlogo_wrap .nav_contents {
+    display: block;
+    position: absolute;
+    top: 200px;
+    z-index: 100;
+    background-color: #252525;
+    opacity: 0;
+    width: 100%;
+    height: auto;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  header .header_wrap .headerlogo_wrap .nav_contents nav ul li {
+    border-bottom: solid 1px #fff;
+    padding: 30px;
+  }
+  header .header_wrap .headerlogo_wrap .nav_contents nav ul li a {
+    color: #fff;
+    font-size: 80px;
+  }
+  header .header_wrap #nav_input:checked ~ .nav_contents {
+    opacity: 0.8;
   }
   header .header_wrap .headernav_wrap {
     display: none;
