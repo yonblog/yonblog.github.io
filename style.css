@@ -338,7 +338,7 @@ css.html sass.html javascript.html ruby.html rubyonrails.html sql.html 共通
 ========================================= */
 @media screen and (max-width: 599px) {
   body {
-    font-size: 20px;
+    font-size: 35px;
     line-height: 1.5;
     width: 100px;
   }
@@ -348,7 +348,7 @@ css.html sass.html javascript.html ruby.html rubyonrails.html sql.html 共通
     margin: 0 auto;
   }
   header .header_wrap .headerlogo_wrap h1 a {
-    font-size: 40px;
+    font-size: 50px;
   }
   header .header_wrap .headernav_wrap {
     display: none;
@@ -360,10 +360,13 @@ css.html sass.html javascript.html ruby.html rubyonrails.html sql.html 共通
   main {
     width: 100%;
     float: none;
-    margin: 0 auto;
+    margin: 0 auto 30px auto;
   }
   main .main_wrap {
     margin: 0 20px 0 20px;
+  }
+  main .main_wrap .update_information_wrap ul li span {
+    font-size: 20px;
   }
   aside {
     width: 90%;
@@ -371,5 +374,8 @@ css.html sass.html javascript.html ruby.html rubyonrails.html sql.html 共通
     float: none;
     margin: 0 auto;
   }
+  /* =========================================================================
+  css.html sass.html javascript.html ruby.html rubyonrails.html sql.html 共通
+  ========================================================================= */
 }
 /*# sourceMappingURL=style.css.map */
