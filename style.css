@@ -214,7 +214,7 @@ header .header_wrap .mainimg_wrap img {
 }
 
 /* ========================================
-main
+    main
 ========================================= */
 main {
   width: 73%;
@@ -244,7 +244,7 @@ main .main_wrap .update_information_wrap ul li span {
 }
 
 /* ========================================
-aside
+    aside
 ========================================= */
 aside {
   width: 23%;
@@ -284,7 +284,7 @@ aside .side_title_wrap p a:hover {
 }
 
 /* ========================================
-footer
+    footer
 ========================================= */
 footer .footer_wrap {
   height: 70px;
@@ -297,9 +297,9 @@ footer .footer_wrap p {
   line-height: 70px;
 }
 
-/* ========================================
+/* =========================================================================
 css.html sass.html javascript.html ruby.html rubyonrails.html sql.html 共通
-========================================= */
+========================================================================= */
 .code_main {
   width: 100%;
 }
@@ -328,5 +328,44 @@ css.html sass.html javascript.html ruby.html rubyonrails.html sql.html 共通
   color: #f18c16;
   font-weight: 700;
   font-size: 18px;
+}
+
+/* ========================================
+    タブレット
+========================================= */
+/* ========================================
+    スマホ
+========================================= */
+@media screen and (max-width: 599px) {
+  body {
+    font-size: 20px;
+    line-height: 1.5;
+    width: 100px;
+  }
+  .container {
+    width: 599px;
+    height: auto;
+    margin: 0 auto;
+  }
+  header .header_wrap .headernav_wrap {
+    display: none;
+  }
+  header .header_wrap .mainimg_wrap .s_img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: auto;
+  }
+  main {
+    width: 100%;
+  }
+  main .main_wrap {
+    margin: 0 20px 0 20px;
+    float: none;
+  }
+  aside {
+    width: 100%;
+    margin: 0 20px 0 20px;
+    float: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
