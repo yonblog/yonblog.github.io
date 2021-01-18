@@ -222,7 +222,7 @@ main {
 }
 
 main .main_wrap {
-  height: 1000px;
+  height: auto;
   margin-left: 20px;
 }
 
@@ -347,25 +347,29 @@ css.html sass.html javascript.html ruby.html rubyonrails.html sql.html 共通
     height: auto;
     margin: 0 auto;
   }
+  header .header_wrap .headerlogo_wrap h1 a {
+    font-size: 40px;
+  }
   header .header_wrap .headernav_wrap {
     display: none;
   }
   header .header_wrap .mainimg_wrap .s_img {
     -o-object-fit: cover;
        object-fit: cover;
-    width: auto;
   }
   main {
     width: 100%;
+    float: none;
+    margin: 0 auto;
   }
   main .main_wrap {
     margin: 0 20px 0 20px;
-    float: none;
   }
   aside {
-    width: 100%;
+    width: 90%;
     margin: 0 20px 0 20px;
     float: none;
+    margin: 0 auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
