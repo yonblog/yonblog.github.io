@@ -171,6 +171,10 @@ header .header_wrap .headerlogo_wrap h1 a {
   font-weight: 700;
 }
 
+header .header_wrap .headerlogo_wrap .sp_menu_wrap {
+  display: none;
+}
+
 header .header_wrap .headernav_wrap nav ul li {
   float: left;
   width: 14%;
