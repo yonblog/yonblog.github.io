@@ -343,7 +343,7 @@ css.html sass.html javascript.html ruby.html rubyonrails.html sql.html 共通
     width: 100px;
   }
   .container {
-    width: 599px;
+    width: auto;
     height: auto;
     margin: 0 auto;
   }
