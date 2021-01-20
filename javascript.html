@@ -54,7 +54,7 @@
     <!-- ============================== ここからmain ============================== -->
     <main class="code_main">
       <div class="code_main_wrap">
-        <section class="code_sec sec_style">
+        <!-- <section class="code_sec sec_style">
           <h2 class="h2_style">JavaScriptの基礎</h2>
           <br>
           <pre class="code_style">
@@ -82,9 +82,9 @@
                <span class="og">hello(</span>'Code Mafia'<span class="og">);</span>
             </pre>
 
-        </section>
+        </section> -->
 
-        <section class="code_sec sec_style">
+        <!-- <section class="code_sec sec_style">
           <h2 class="h2_style">Progete JavaScript Ⅰ</h2>
           <br>
           <pre class="code_style">
@@ -102,8 +102,117 @@
             <h3 class="h3_style">□ テンプレートリテラル</h3>
             console.log(`私の名前は<span class="og">${name}</span>です`);
           </pre>
+        </section> -->
+
+        <section class="code_sec sec_style">
+          <h2 class="h2_style">JavaScript の用語解説</h2>
+          <br>
+          <pre class="code_style">
+            <h3 class="h3_style">□ 関数</h3>
+              const 定数名 = <span class="og">function () {
+                
+              };
+            </span></pre>
+            <pre class="code_style">
+              <h3 class="h3_style">□ アロー関数</h3>
+                const 定数名 = <span class="og">() => {
+                  
+                };
+              </span>
+            </pre>
+            <pre class="code_style">
+              <h3 class="h3_style">□ オブジェクト</h3>
+              モノの情報が集まったもの<span class="og">
+                const iPhone = {メーカー: `アップル`, 価格: 50,000, 色: `ブラック`};</span>
+            </pre>
+          <pre class="code_style">
+            <h3 class="h3_style">□ クラス</h3><br>
+            同じオブジェクトを沢山作らなくていいように、事前に用意する設計図のようなもの<span class="og">
+              class クラス名 {
+
+              }
+            </span>
+          </pre>
+          <pre class="code_style">
+            <h3 class="h3_style">□ コンストラクタ</h3><br>
+            クラスの中に書くオブジェクトのこと<br>
+            class クラス名 {
+              <span class="og">constructor() {
+                this.プロパティ名 = 値;
+                this.プロパティ名 = 値;
+                }</span>
+            }
+          </pre>
+          <pre class="code_style">
+            <h3 class="h3_style">□ インスタンス</h3><br>
+            クラスからコピーしたオブジェクトのこと
+              const 定数名 = <span class="og">new クラス名();</span>
+          </pre>
+          <pre class="code_style">
+            <h3 class="h3_style">□ メソッド</h3><br>
+            クラスの中の関数のこと<br>
+              class クラス名 {
+                constructor() {
+                  this.プロパティ名 = 値;
+                  this.プロパティ名 = 値;
+                }
+                <span class="og">メソッド名() {
+
+                }</span>
+              }
+          </pre>
+          <pre class="code_style">
+            <h3 class="h3_style">□ 継承</h3><br>
+            すでにあるクラスの内容を引き継いで、別のクラスを作ること<br>
+              class 新クラス名 <span class="og">extends</span> 元クラス名 {
+
+              }
+          </pre>
+        </section>
 
 
+
+        <section class="code_sec sec_style">
+          <h2 class="h2_style">ドットインストール / JavaScript オブジェクト編</h2>
+          <br>
+          <pre class="code_style">
+            <h3 class="h3_style">□ 今の日時を取得したいとき</h3>
+            <span class="og">new Date()</span> → インスタンスとして生成すると、現在日時を定数に取得できる。<br>
+            <span class="og">getFullYear()</span> → 年を取得できる。<br>
+            <span class="og">getMonth()</span> → 月を取得できる。※「1月→ 0」「2月→ 1」「5月→ 4」などとなっているので注意。<br>
+            <span class="og">getDate()</span> → 日を取得できる。<br>
+            <span class="og">getDay()</span> → 曜日を取得できる。※「0 →日曜」「1 →月曜」「2 →火曜」<br>
+            <span class="og">getHours()</span> → 時間を取得できる。<br>
+            <span class="og">getMinutes()</span> → 分を取得できる。<br>
+            <span class="og">getSeconds()</span> → 秒を取得できる。<br>
+            <span class="og">getMilliseconds()</span> → ミリ秒を取得できる。<br>
+          </pre>
+          <pre class="code_style">
+            <h3 class="h3_style">□ 特定の日時を指定したいとき</h3>
+            <span class="og">setHours()</span> → setHours(10, 20, 30); とすると「10時20分30秒」になる。<br>
+            <span class="og">setDate()</span> → setDate(30); とすると「30日」になる。
+          </pre>
+          <pre class="code_style">
+            <h3 class="h3_style">□ alert()、confirm()</h3>
+            <span class="og">alert()</span> → 警告を表示させたいときに使う。<br>
+            <span class="og">confirm()</span> → 確認を求めるときに使う。(「キャンセルしますか？」など)
+          </pre>
+          <pre class="code_style">
+            <h3 class="h3_style">□ setInterval()、clearInterval()</h3>
+            <span class="og">setInterval()</span> → 一定時間ごとに特定の処理を繰り返す。setInterval(行いたい処理の関数, 繰り返したい時間);<br>
+            <span class="og">setTimeout()</span> → 指定した時間後に、1回処理を行う。<br>
+            <span class="og">clearInterval()</span> → setInterval() の処理を停止したいときに使う。<br>
+          </pre>
+          <pre class="code_style">
+            <h3 class="h3_style">□ setInterval()、setTimeout()の違い</h3>
+            <span class="og">setInterval()</span> → 指定した時間後に必ず関数実行が繰り返される。<br>
+            <span class="og">setTimeout()</span> → 関数が実行された後に指定した時間が経過する。
+          </pre>
+          <pre class="code_style">
+            <h3 class="h3_style">□ 例外処理</h3>
+            <span class="og">toUpperCase()</span> → 文字列をすべて大文字に変える。<br>
+            <span class="og">try {} catch {}</span> → エラーが起きても処理を続けたいときに try {} catch {} で囲うと処理を続けられる。<br>
+          </pre>
         </section>
       </div>
     </main>
