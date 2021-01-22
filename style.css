@@ -344,6 +344,10 @@ css.html sass.html javascript.html ruby.html rubyonrails.html sql.html 共通
   color: #f18c16;
 }
 
+.red {
+  color: red;
+}
+
 /* ========================================
     スマホ
 ========================================= */
