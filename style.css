@@ -132,13 +132,18 @@ a {
   border-radius: 8px;
   color: #fff;
   font-weight: 600;
-  font-size: 17px;
+  font-size: 20px;
 }
 
 .h3_style {
-  color: #555555;
+  color: #fff;
+  background-color: #517D99;
   font-family: Menlo, Monaco, Consolas, CourierNew, monospace;
-  margin-left: 50px;
+  padding: 10px;
+  font-size: 13px;
+  position: absolute;
+  top: 5px;
+  left: 0;
 }
 
 /* ========================================
@@ -318,25 +323,27 @@ css.html sass.html javascript.html ruby.html rubyonrails.html sql.html 共通
   margin-bottom: 30px;
 }
 
-.code_main .code_main_wrap .sec_style .code_style {
-  -webkit-box-shadow: 2px 2px 8px #a9a9a9;
-          box-shadow: 2px 2px 8px #a9a9a9;
-  width: 80%;
-  margin: 0 auto 15px auto;
-  font-family: Menlo, Monaco, Consolas, CourierNew, monospace;
-  font-size: 14px;
-  color: #555555;
+.code_main .code_main_wrap .sec_style .code_style_wrap {
+  margin-top: 30px;
+  width: 90%;
+  margin: 30px auto 0 auto;
+  position: relative;
+}
+
+.code_main .code_main_wrap .sec_style .code_style_wrap .code_style {
+  padding: 20px;
+  background-color: #F3F5F6;
+  color: #39464e;
+  font-size: 20px;
+  border-top: 5px solid #6AC1B7;
+  overflow-x: scroll;
+  line-height: 30px;
 }
 
 .og {
   color: #f18c16;
-  font-weight: 700;
-  font-size: 18px;
 }
 
-/* ========================================
-    タブレット
-========================================= */
 /* ========================================
     スマホ
 ========================================= */
@@ -427,5 +434,16 @@ css.html sass.html javascript.html ruby.html rubyonrails.html sql.html 共通
   /* =========================================================================
   css.html sass.html javascript.html ruby.html rubyonrails.html sql.html 共通
   ========================================================================= */
+  .code_main {
+    width: 100%;
+    margin: 0 auto 30px auto;
+  }
+  .code_main .code_main_wrap .sec_style .h2_style {
+    font-size: 30px;
+  }
+  .code_main .code_main_wrap .sec_style .code_style .og {
+    word-wrap: break-word;
+    font-size: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
