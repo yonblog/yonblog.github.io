@@ -96,13 +96,18 @@ a {
   border-radius: 8px;
   color: #fff;
   font-weight: 600;
-  font-size: 17px;
+  font-size: 20px;
 }
 
 .h3_style {
-  color: #555555;
+  color: #fff;
+  background-color: #517D99;
   font-family: Menlo, Monaco, Consolas, CourierNew, monospace;
-  margin-left: 50px;
+  padding: 10px;
+  font-size: 13px;
+  position: absolute;
+  top: 5px;
+  left: 0;
 }
 
 /* ========================================
@@ -271,14 +276,20 @@ css.html sass.html javascript.html ruby.html rubyonrails.html sql.html 共通
     .sec_style {
       padding-bottom: 10px;
       margin-bottom: 30px;
-      .code_style {
-        box-shadow: 2px 2px 8px #a9a9a9;
-        width: 80%;
-        margin: 0 auto 15px auto;
-        // background-color: #fa8072;
-        font-family: Menlo, Monaco, Consolas, CourierNew, monospace;
-        font-size: 14px;
-        color: #555555;
+      .code_style_wrap {
+        margin-top: 30px;
+        width: 90%;
+        margin: 30px auto 0 auto;
+        position: relative;
+        .code_style {
+          padding: 20px;
+          background-color: #F3F5F6;
+          color: #39464e;
+          font-size: 20px;
+          border-top: 5px solid #6AC1B7;
+          overflow-x: scroll;
+          line-height: 30px;
+        }
       }
     }
   }
@@ -286,8 +297,6 @@ css.html sass.html javascript.html ruby.html rubyonrails.html sql.html 共通
 
 .og {
   color: #f18c16;
-  font-weight: 700;
-  font-size: 18px;
 }
 
 
