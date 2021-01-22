@@ -446,7 +446,7 @@ css.html sass.html javascript.html ruby.html rubyonrails.html sql.html 共通
   }
   .code_main .code_main_wrap .sec_style .code_style_wrap .code_style .og {
     word-wrap: break-word;
-    font-size: 10px;
+    font-size: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
