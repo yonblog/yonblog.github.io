@@ -295,7 +295,7 @@
           <div class="code_style_wrap">
             <h3 class="h3_style">今の日時を取得したいとき</h3>
             <pre class="code_style">
-
+              
               <span class="og">new Date()</span> → インスタンスとして生成すると、現在日時を定数に取得できる。<br>
               <span class="og">getFullYear()</span> → 年を取得できる。<br>
               <span class="og">getMonth()</span> → 月を取得できる。※「1月→ 0」「2月→ 1」「5月→ 4」などとなっているので注意。<br>
@@ -310,7 +310,7 @@
           <div class="code_style_wrap">
             <h3 class="h3_style">特定の日時を指定したいとき</h3>
             <pre class="code_style">
-
+              
               <span class="og">setHours()</span> → setHours(10, 20, 30); とすると「10時20分30秒」になる。<br>
               <span class="og">setDate()</span> → setDate(30); とすると「30日」になる。
             </pre>
@@ -326,7 +326,7 @@
           <div class="code_style_wrap">
             <h3 class="h3_style">setInterval()、clearInterval()</h3>
             <pre class="code_style">
-
+              
               <span class="og">setInterval()</span> → 一定時間ごとに特定の処理を繰り返す。setInterval(行いたい処理の関数, 繰り返したい時間);<br>
               <span class="og">setTimeout()</span> → 指定した時間後に、1回処理を行う。<br>
               <span class="og">clearInterval()</span> → setInterval() の処理を停止したいときに使う。<br>
@@ -335,7 +335,7 @@
           <div class="code_style_wrap">
             <h3 class="h3_style">setInterval()、setTimeout()の違い</h3>
             <pre class="code_style">
-
+              
               <span class="og">setInterval()</span> → 指定した時間後に必ず関数実行が繰り返される。<br>
               <span class="og">setTimeout()</span> → 関数が実行された後に指定した時間が経過する。
             </pre>
@@ -349,11 +349,77 @@
             </pre>
           </div>
         </section>
+        <section class="code_sec sec_style">
+          <h2 class="h2_style">ドットインストール / JavaScript おみくじ編</h2>
+          <div class="code_style_wrap">
+            <h3 class="h3_style">クリックイベント</h3>
+            <pre class="code_style">
 
+              1 btn定数の用意
+              2 <span class="og">doccument.getElementById()</span> でbottonを紐付ける
+              3 <span class="og">btn.addEventListener()</span> でclickイベントを設定 
+              4 pushの表記をHitに変えるために <span class="og">btn.textContent</span> を設定
+            </pre>
+          </div>
+          <div class="code_style_wrap">
+            <h3 class="h3_style">数字をランダムに取得</h3>
+            <pre class="code_style">
+
+              1 <span class="og">Math.random()</span> で0以上1未満の数字をランダムで取得
+              2 数字の1〜2も取得できるように3を掛けてあげる
+              3 ただこのままだと小数点の数字も選ばれてしまうので <span class="og">Math.floor()</span> で小数点を排除する
+            </pre>
+          </div>
+          <div class="code_style_wrap">
+            <h3 class="h3_style">大吉を表示させる</h3>
+            <pre class="code_style">
+
+              1 変数nを準備して
+              2 <span class="og">swich文</span> を使って〇〇の時、〇〇の時を処理を分ける
+              3 <span class="og">btn.textContent</span> でo,1,2を大吉・中吉・凶に変える
+            </pre>
+          </div>
+          <div class="code_style_wrap">
+            <h3 class="h3_style">配列を使ってみる</h3>
+            <pre class="code_style">
+
+            </pre>
+          </div>
+          <div class="code_style_wrap">
+            <h3 class="h3_style"></h3>
+            <pre class="code_style">
+
+            </pre>
+          </div>
+          <div class="code_style_wrap">
+            <h3 class="h3_style"></h3>
+            <pre class="code_style">
+
+            </pre>
+          </div>
+          <div class="code_style_wrap">
+            <h3 class="h3_style"></h3>
+            <pre class="code_style">
+
+            </pre>
+          </div>
+          <div class="code_style_wrap">
+            <h3 class="h3_style"></h3>
+            <pre class="code_style">
+
+            </pre>
+          </div>
+          <div class="code_style_wrap">
+            <h3 class="h3_style"></h3>
+            <pre class="code_style">
+
+            </pre>
+          </div>
+        </section>
       </div>
     </main>
     <div class="cf"></div>
-
+    
     <!-- ============================== ここからfooter ============================== -->
     <footer>
       <div class="footer_wrap">
