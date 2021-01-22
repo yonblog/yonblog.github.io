@@ -55,14 +55,62 @@
     <main class="code_main">
       <div class="code_main_wrap">
 
-
+        <!-- <div class="code_style_wrap">
+          <h3 class="h3_style"></h3>
+          <pre class="code_style">
+          </pre>
+        </div> -->
         <section class="code_sec sec_style">
           <h2 class="h2_style">JavaScript の用語解説</h2>
+          <div class="code_style_wrap">
+            <h3 class="h3_style">コメントアウト</h3>
+            <pre class="code_style">
+
+              1 <span class="og">//</span> 1行コメント
+              2 <span class="og">/*</span>
+                複数行に渡る
+                コメント
+                <span class="og">*/</span>
+            </pre>
+          </div>
+          <div class="code_style_wrap">
+            <h3 class="h3_style">オブジェクト</h3>
+            <pre class="code_style">
+
+              モノの情報が集まったもの
+              
+                const iPhone = <span class="og">{
+                  maker: `Apple`,  <span class="red">⇐※プロパティ</span>
+                  price: 50000, 
+                  color: `black`,
+                };</span>
+
+              【オブジェクトのプロパティの値の取り出し方】
+                <span class="og">iPhone.maker</span>  
+                <span class="og">iPhone.price</span>  
+                <span class="og">iPhone.color</span>
+                
+              【オブジェクトのプロパティの値の変え方】
+                <span class="og">iPhone.color = `blue`;</span>
+
+            </pre>
+          </div>
+          <div class="code_style_wrap">
+            <h3 class="h3_style">配列</h3>
+            <pre class="code_style">
+
+              let fruit1 = <span class="og">['apple', 'lemon'];</span>
+
+              【配列の値の取り出し方】
+                <span class="og">fruit1[0]</span> <span class="red">⇒※appleが取得できる</span>
+                <span class="og">fruit1[1]</span> <span class="red">⇒※lemonが取得できる</span>
+            </pre>
+          </div>
           <div class="code_style_wrap">
             <h3 class="h3_style">関数</h3>
             <pre class="code_style">
 
-              const 定数名 = <span class="og">function () {
+              <span class="og">function 関数名() {
                 
               };</span>
             </pre>
@@ -71,22 +119,21 @@
             <h3 class="h3_style">アロー関数</h3>
             <pre class="code_style">
 
-              const 定数名 = <span class="og">() => {
+              <span class="og">() => {
                   
               };</span>
-            </pre>
-          </div>
-          <div class="code_style_wrap">
-            <h3 class="h3_style">オブジェクト</h3>
-            <pre class="code_style">
 
-              モノの情報が集まったもの
-              <span class="og">
-                const iPhone = {
-                  メーカー: `アップル`, 
-                  価格: 50,000, 
-                  色: `ブラック`,
-                };</span>
+              【省略形】
+                <span class="red">※引数が1つの場合は () が省略できる</span>
+                <span class="og">引数 => {
+                  
+                }</span>
+
+                <span class="red">※処理がreturnだけの場合は {} と retrun が省略できる</span>
+                <span class="og">(引数1, 引数2) => 戻り値;</span>
+
+                <span class="red">※引数が1つで、処理がreturnだけの場合は () と {} と retrun が省略できる</span>
+                <span class="og">引数 => 戻り値;</span>
             </pre>
           </div>
           <div class="code_style_wrap">
@@ -385,36 +432,11 @@
 
             </pre>
           </div>
-          <div class="code_style_wrap">
+          <!-- <div class="code_style_wrap">
             <h3 class="h3_style"></h3>
             <pre class="code_style">
-
             </pre>
-          </div>
-          <div class="code_style_wrap">
-            <h3 class="h3_style"></h3>
-            <pre class="code_style">
-
-            </pre>
-          </div>
-          <div class="code_style_wrap">
-            <h3 class="h3_style"></h3>
-            <pre class="code_style">
-
-            </pre>
-          </div>
-          <div class="code_style_wrap">
-            <h3 class="h3_style"></h3>
-            <pre class="code_style">
-
-            </pre>
-          </div>
-          <div class="code_style_wrap">
-            <h3 class="h3_style"></h3>
-            <pre class="code_style">
-
-            </pre>
-          </div>
+          </div> -->
         </section>
       </div>
     </main>
