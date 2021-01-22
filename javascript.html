@@ -54,103 +54,80 @@
     <!-- ============================== ここからmain ============================== -->
     <main class="code_main">
       <div class="code_main_wrap">
-        <!-- <section class="code_sec sec_style">
-          <h2 class="h2_style">JavaScriptの基礎</h2>
-          <br>
-          <pre class="code_style">
-            <h3 class="h3_style">□ 変数の定義</h3><span class="og">
-                var name = 'Tom';
-                console.log('hello' + name);
-              </span>
-            </pre>
 
-            <pre class="code_style">
-              <h3 class="h3_style">□ データ型の種類</h3>
-              ①Number ②String ③Boolean ④Undefined ⑤Null ⑥Symbol
-              ※データ型の種類を調べる方法<span class="og">console.log(typeof variable);</span>で調べられる。
-              ※動的型付け言語という。
-            </pre>
-
-            <pre class="code_style">
-              <h3 class="h3_style">□ 関数</h3><span class="og">
-            function hello(</span>name <span class="og">) {</span>
-                
-                  let name = 'Code Mafia';
-                  console.log('hello' + name);
-                <span class="og">}</span>
-                
-               <span class="og">hello(</span>'Code Mafia'<span class="og">);</span>
-            </pre>
-
-        </section> -->
-
-        <!-- <section class="code_sec sec_style">
-          <h2 class="h2_style">Progete JavaScript Ⅰ</h2>
-          <br>
-          <pre class="code_style">
-            <h3 class="h3_style">□ 変数</h3><span class="og">
-              let name = </span>"にんじゃわんこ"<span class="og">;</span>
-          </pre>
-
-          <pre class="code_style">
-            <h3 class="h3_style">□ 定数</h3><span class="og">
-              const name = </span> "ひつじ仙人"<span class="og">;</span>
-                  ※constは上書きできない。
-          </pre>
-
-          <pre class="code_style">
-            <h3 class="h3_style">□ テンプレートリテラル</h3>
-            console.log(`私の名前は<span class="og">${name}</span>です`);
-          </pre>
-        </section> -->
 
         <section class="code_sec sec_style">
           <h2 class="h2_style">JavaScript の用語解説</h2>
-          <br>
-          <pre class="code_style">
-            <h3 class="h3_style">□ 関数</h3>
+          <div class="code_style_wrap">
+            <h3 class="h3_style">関数</h3>
+            <pre class="code_style">
+
               const 定数名 = <span class="og">function () {
                 
-              };
-            </span></pre>
+              };</span>
+            </pre>
+          </div>
+          <div class="code_style_wrap">
+            <h3 class="h3_style">アロー関数</h3>
             <pre class="code_style">
-              <h3 class="h3_style">□ アロー関数</h3>
-                const 定数名 = <span class="og">() => {
+
+              const 定数名 = <span class="og">() => {
                   
-                };
+              };</span>
+            </pre>
+          </div>
+          <div class="code_style_wrap">
+            <h3 class="h3_style">オブジェクト</h3>
+            <pre class="code_style">
+
+              モノの情報が集まったもの
+              <span class="og">
+                const iPhone = {
+                  メーカー: `アップル`, 
+                  価格: 50,000, 
+                  色: `ブラック`,
+                };</span>
+            </pre>
+          </div>
+          <div class="code_style_wrap">
+            <h3 class="h3_style">クラス</h3>
+            <pre class="code_style">
+
+              同じオブジェクトを沢山作らなくていいように、事前に用意する設計図のようなもの
+              <span class="og">
+                class クラス名 {
+  
+                }
               </span>
             </pre>
+          </div>
+          <div class="code_style_wrap">
+            <h3 class="h3_style">コンストラクタ</h3>
             <pre class="code_style">
-              <h3 class="h3_style">□ オブジェクト</h3>
-              モノの情報が集まったもの<span class="og">
-                const iPhone = {メーカー: `アップル`, 価格: 50,000, 色: `ブラック`};</span>
-            </pre>
-          <pre class="code_style">
-            <h3 class="h3_style">□ クラス</h3><br>
-            同じオブジェクトを沢山作らなくていいように、事前に用意する設計図のようなもの<span class="og">
-              class クラス名 {
 
-              }
-            </span>
-          </pre>
-          <pre class="code_style">
-            <h3 class="h3_style">□ コンストラクタ</h3><br>
-            クラスの中に書くオブジェクトのこと<br>
-            class クラス名 {
-              <span class="og">constructor() {
-                this.プロパティ名 = 値;
-                this.プロパティ名 = 値;
+              クラスの中に書くオブジェクトのこと<br>
+              class クラス名 {
+                <span class="og">constructor() {
+                  this.プロパティ名 = 値;
+                  this.プロパティ名 = 値;
                 }</span>
             }
-          </pre>
-          <pre class="code_style">
-            <h3 class="h3_style">□ インスタンス</h3><br>
-            クラスからコピーしたオブジェクトのこと
+            </pre>
+          </div>
+          <div class="code_style_wrap">
+            <h3 class="h3_style">インスタンス</h3>
+            <pre class="code_style">
+
+              クラスからコピーしたオブジェクトのこと
+
               const 定数名 = <span class="og">new クラス名();</span>
-          </pre>
-          <pre class="code_style">
-            <h3 class="h3_style">□ メソッド</h3><br>
-            クラスの中の関数のこと<br>
+            </pre>
+          </div>
+          <div class="code_style_wrap">
+            <h3 class="h3_style">メソッド</h3>
+            <pre class="code_style">
+
+              クラスの中の関数のこと<br>
               class クラス名 {
                 constructor() {
                   this.プロパティ名 = 値;
@@ -160,15 +137,127 @@
 
                 }</span>
               }
-          </pre>
-          <pre class="code_style">
-            <h3 class="h3_style">□ 継承</h3><br>
-            すでにあるクラスの内容を引き継いで、別のクラスを作ること<br>
+            </pre>
+          </div>
+          <div class="code_style_wrap">
+            <h3 class="h3_style">継承</h3>
+            <pre class="code_style">
+
+              すでにあるクラスの内容を引き継いで、別のクラスを作ること<br>
               class 新クラス名 <span class="og">extends</span> 元クラス名 {
 
               }
+            </pre>
+          </div>
+        </section>
+        
+
+        <section class="code_sec sec_style">
+          <h2 class="h2_style">JavaScript DOMの用語解説</h2>
+          <div class="code_style_wrap">
+            <h3 class="h3_style">Nodeツリー・DOMツリー</h3>
+            <pre class="code_style">
+
+              HTMLの要素は階層構造になっている。
+            </pre>
+          </div>
+          <div class="code_style_wrap">
+            <h3 class="h3_style">Element Node</h3>
+            <pre class="code_style">
+              
+              HTML,body,h1などの要素こと。
+            </pre>
+          </div>
+          <div class="code_style_wrap">
+            <h3 class="h3_style">Text Node</h3>
+            <pre class="code_style">
+
+              テキストや空白の要素こと。
+            </pre>
+          </div>
+          <div class="code_style_wrap">
+            <h3 class="h3_style">Parent Node</h3>
+            <pre class="code_style">
+
+              親ノードのこと。
+            </pre>
+          </div>
+          <div class="code_style_wrap">
+            <h3 class="h3_style">Child Node</h3>
+            <pre class="code_style">
+
+              子ノードのこと。
+            </pre>
+          </div>
+          <div class="code_style_wrap">
+            <h3 class="h3_style">Sibling Node(シブリングノード)</h3>
+            <pre class="code_style">
+
+              同じ階層の兄弟ノードのこと。
+            </pre>
+          </div>
+          <div class="code_style_wrap">
+            <h3 class="h3_style">要素名.ChildNodes</h3>
+            <pre class="code_style">
+
+              要素名の全ての子ノードを取得できる。<br>
+              ※空白・改行も含まれる。
+            </pre>
+          </div>
+          <pre class="code_style">
+            <h3 class="h3_style">□ 要素名.Children</h3><br>
+            空白・改行ノードを除いた、要素名の全ての子ノードを取得できる。<br>
+          </pre>
+          <pre class="code_style">
+            <h3 class="h3_style">□ 要素名.FirstChild 要素名.LastChild</h3><br>
+            子ノードの最初、子ノードの最後が取得できる。<br>
+            ※空白が最初なら空白が取得される。改行が最初なら改行が取得される。
+          </pre>
+          <pre class="code_style">
+            <h3 class="h3_style">□ 要素名.FirstElementChild 要素名.LastElementChild</h3><br>
+            子ノードの最初、子ノードの最後が取得できる。<br>
+            ※空白・改行は含まれない。
+          </pre>
+          <pre class="code_style">
+            <h3 class="h3_style">□ 要素名.parentNode</h3><br>
+            要素の親ノードが取得できる。
+          </pre>
+          <pre class="code_style">
+            <h3 class="h3_style">□ 要素名.previousSibling 要素名.nextSibling</h3><br>
+            1つ前の兄弟ノード、1つ後の兄弟ノードが取得できる。<br>
+            ※空白が最初なら空白が取得される。改行が最初なら改行が取得される。
+          </pre>
+          <pre class="code_style">
+            <h3 class="h3_style">□ 要素名.previousElementSibling 要素名.nextElementSibling</h3><br>
+            1つ前の兄弟ノード、1つ後の兄弟ノードが取得できる。<br>
+            ※空白・改行は含まれない。
+          </pre>
+          <pre class="code_style">
+            <h3 class="h3_style">□ className</h3><br>
+            JavaScriptとCSSのclassは意味が違う。JavaScriptでCSSのclassを指定したいときは
+            <span class="og">className</span>と記述してあげる。
           </pre>
         </section>
+
+        <section class="code_sec sec_style">
+          <h2 class="h2_style">ドットインストール / JavaScript DOM編</h2>
+          <br>
+          <pre class="code_style">
+            <h3 class="h3_style">□ HTMLの要素を選択するメソッド</h3>
+            document.<span class="og">querySelector(CSS名)</span>
+            document.<span class="og">getElementById(CSS名)</span>
+          </pre>
+          <pre class="code_style">
+            <h3 class="h3_style">□ 全ての要素を選択するメソッド</h3>
+            document.<span class="og">querySelectorALL(CSS名)[インデックス番号]</span>
+          </pre>
+          <pre class="code_style">
+            <h3 class="h3_style">□ ブラウザ上でイベントが起こったときのメソッド</h3>
+            ※イベントとは・・・ボタンのクリックやキーボード入力などのこと。<br>
+            要素名.<span class="og">addEventListener(種類, 関数)</span>
+          </pre>
+        </section>
+
 
 
 
@@ -214,6 +303,7 @@
             <span class="og">try {} catch {}</span> → エラーが起きても処理を続けたいときに try {} catch {} で囲うと処理を続けられる。<br>
           </pre>
         </section>
+
       </div>
     </main>
     <div class="cf"></div>
