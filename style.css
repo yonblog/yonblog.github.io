@@ -104,7 +104,7 @@ header {
 }
 
 header div#header_wrap h1.main_title {
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 900;
   color: #4790BB;
   margin: 30px 0 30px 25px;
@@ -167,6 +167,10 @@ header div#header_wrap div#hb_nemu div#nav_contents nav.main_nav ul li a {
 
 header div#header_wrap div#hb_nemu div#nav_contents nav.main_nav ul li a:hover {
   opacity: 1;
+}
+
+header div#header_wrap div#nav_nemu {
+  display: none;
 }
 
 label#nav_open span:before,
@@ -232,7 +236,7 @@ div#update div#update_wrap dl div.dtdd_wrap:hover {
 }
 
 div#update div#update_wrap dl div.dtdd_wrap dt {
-  font-size: 15px;
+  font-size: 12px;
   display: inline-block;
 }
 
@@ -244,7 +248,7 @@ div#update div#update_wrap dl div.dtdd_wrap dt span {
 }
 
 div#update div#update_wrap dl div.dtdd_wrap dd {
-  font-size: 15px;
+  font-size: 12px;
   display: inline-block;
 }
 
@@ -258,7 +262,7 @@ div#book {
 
 div#book div#book_wrap {
   margin: 20px;
-  height: 700px;
+  height: auto;
 }
 
 div#book div#book_wrap h3.book_title {
@@ -267,13 +271,32 @@ div#book div#book_wrap h3.book_title {
   font-weight: 600;
   padding-top: 50px;
   color: #fff;
+  margin-bottom: 50px;
+}
+
+div#book div#book_wrap div.book_contents_wrap div.book_contents {
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+div#book div#book_wrap div.book_contents_wrap div.book_contents img {
+  width: 200px;
+}
+
+div#book div#book_wrap div.book_contents_wrap div.book_contents p.book_title {
+  color: #fff;
+  font-size: 23px;
+}
+
+div#book div#book_wrap div.book_contents_wrap div.book_contents p.book_title span {
+  font-size: 15px;
 }
 
 /* ========================================
-site
+    site
 ========================================= */
 div#site {
-  margin-bottom: 200px;
+  margin-bottom: 130px;
 }
 
 div#site div#site_wrap {
@@ -286,46 +309,34 @@ div#site div#site_wrap h3.site_title {
   border-bottom: solid 2px #4790BB;
   display: inline-block;
   padding: 10px;
+  margin-bottom: 50px;
 }
 
-div#site div#site_wrap div.site_list div.site_contents {
-  margin: 20px 0;
-}
-
-div#site div#site_wrap div.site_list div.site_contents a {
+div#site div#site_wrap div.site_contents_wrap {
   width: 100%;
-  height: 460px;
-  -webkit-box-shadow: 5px 5px 5px #cccccc;
-          box-shadow: 5px 5px 5px #cccccc;
-  display: block;
-  cursor: pointer;
-  -webkit-transition: .2s;
-  transition: .2s;
 }
 
-div#site div#site_wrap div.site_list div.site_contents a:hover {
-  opacity: 0.8;
-}
-
-div#site div#site_wrap div.site_list div.site_contents a img {
-  width: 100%;
-  height: 75%;
-  background-size: cover;
-}
-
-div#site div#site_wrap div.site_list div.site_contents a p.site_text {
-  font-weight: 700;
-  font-size: 30px;
-  margin-top: 31px;
+div#site div#site_wrap div.site_contents_wrap div.site_contents {
+  margin-bottom: 50px;
   text-align: center;
 }
 
-div#site div#site_wrap div.site_list div.site_contents a span.site_name {
+div#site div#site_wrap div.site_contents_wrap div.site_contents a img {
+  height: 250px;
+}
+
+div#site div#site_wrap div.site_contents_wrap div.site_contents a p.site_name {
   font-size: 20px;
   text-align: center;
-  display: inline-block;
 }
 
+div#site div#site_wrap div.site_contents_wrap div.site_contents a p.site_name span {
+  font-size: 15px;
+}
+
+/* ========================================
+    footer
+========================================= */
 footer {
   background-color: #2A5772;
   height: auto;
@@ -351,5 +362,191 @@ footer div#footer_wrap p.copylight {
   font-size: 13px;
   text-align: center;
   margin-top: 40px;
+}
+
+/* ============================================================
+    PCサイズ
+============================================================= */
+@media (min-width: 768px) {
+  /* ========================================
+        全体設定
+    ========================================= */
+  body {
+    font-size: 14px;
+  }
+  /* ========================================
+        header
+    ========================================= */
+  header div#header_wrap {
+    width: 1500px;
+    height: 120px;
+    margin: 0 auto;
+  }
+  header div#header_wrap h1.main_title {
+    font-size: 40px;
+    float: left;
+    margin-top: 50px;
+  }
+  header div#header_wrap div#hb_nemu {
+    display: none;
+  }
+  header div#header_wrap div#nav_nemu {
+    display: block;
+    float: right;
+  }
+  header div#header_wrap div#nav_nemu nav.main_nav ul li {
+    margin-top: 50px;
+    float: left;
+    border-left: solid 1px #cccccc;
+  }
+  header div#header_wrap div#nav_nemu nav.main_nav ul li:last-child {
+    border-right: solid 1px #cccccc;
+  }
+  header div#header_wrap div#nav_nemu nav.main_nav ul li a {
+    font-size: 20px;
+    padding: 20px;
+    -webkit-transition: .2s;
+    transition: .2s;
+  }
+  header div#header_wrap div#nav_nemu nav.main_nav ul li a:hover {
+    opacity: 0.7;
+    border-bottom: 4px solid #4790BB;
+  }
+  /* ========================================
+        mainimg
+    ========================================= */
+  div#mainimg {
+    height: 1000px;
+    background: url(images/mainimg2.jpeg) no-repeat top;
+    background-size: cover;
+    margin-bottom: 130px;
+  }
+  /* ========================================
+        update
+    ========================================= */
+  div#update div#update_wrap {
+    width: 975px;
+    margin: 0 auto;
+  }
+  div#update div#update_wrap dl {
+    margin-top: 20px;
+  }
+  div#update div#update_wrap dl div.dtdd_wrap {
+    padding: 20px 0 20px 40px;
+  }
+  div#update div#update_wrap dl div.dtdd_wrap dt {
+    font-size: 18px;
+  }
+  div#update div#update_wrap dl div.dtdd_wrap dt span {
+    font-size: 14px;
+  }
+  div#update div#update_wrap dl div.dtdd_wrap dd {
+    font-size: 23px;
+  }
+  /* ========================================
+        book
+    ========================================= */
+  div#book div#book_wrap {
+    width: 1500px;
+    margin: 0 auto;
+    height: 550px;
+  }
+  div#book div#book_wrap h3.book_title {
+    margin-bottom: 50px;
+  }
+  div#book div#book_wrap div.book_contents_wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+  }
+  div#book div#book_wrap div.book_contents_wrap div.book_contents {
+    width: 500px;
+    margin: 10px;
+  }
+  div#book div#book_wrap div.book_contents_wrap div.book_contents img {
+    width: 200px;
+  }
+  div#book div#book_wrap div.book_contents_wrap div.book_contents p.book_title {
+    margin-top: 30px;
+    color: #fff;
+    font-size: 20px;
+  }
+  /* ========================================
+        site
+    ========================================= */
+  div#site div#site_wrap {
+    width: 1500px;
+    height: auto;
+    margin: 0 auto;
+  }
+  div#site div#site_wrap h3.site_title {
+    margin-bottom: 40px;
+  }
+  div#site div#site_wrap div.site_contents_wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  div#site div#site_wrap div.site_contents_wrap div.site_contents {
+    margin: 0 auto 20px auto;
+    width: 700px;
+    height: 200px;
+  }
+  div#site div#site_wrap div.site_contents_wrap div.site_contents:hover {
+    -webkit-transition: .3s;
+    transition: .3s;
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px);
+  }
+  div#site div#site_wrap div.site_contents_wrap div.site_contents:hover a img {
+    -webkit-transition: .3s;
+    transition: .3s;
+    opacity: 0.8;
+  }
+  div#site div#site_wrap div.site_contents_wrap div.site_contents a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  div#site div#site_wrap div.site_contents_wrap div.site_contents a img {
+    height: 200px;
+    margin-right: 30px;
+  }
+  div#site div#site_wrap div.site_contents_wrap div.site_contents a p.site_name {
+    font-size: 20px;
+    line-height: 200px;
+  }
+  div#site div#site_wrap div.site_contents_wrap div.site_contents a p.site_name span {
+    font-size: 15px;
+  }
+  /* ========================================
+        footer
+    ========================================= */
+  footer div#footer_wrap {
+    width: 1500px;
+    margin: 0 auto;
+  }
+  footer div#footer_wrap nav.footer_nav {
+    height: 50px;
+  }
+  footer div#footer_wrap nav.footer_nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 10px;
+  }
+  footer div#footer_wrap nav.footer_nav ul li {
+    border-bottom: none;
+  }
+  footer div#footer_wrap nav.footer_nav ul li a {
+    padding: 40px 20px 20px 20px;
+    font-size: 20px;
+  }
+  footer div#footer_wrap nav.footer_nav ul li a:hover {
+    border-bottom: solid 4px #fff;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
 }
 /*# sourceMappingURL=style.css.map */
