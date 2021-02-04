@@ -10,8 +10,9 @@
 <body>
     <!-- ==================== ここからheader ==================== -->
     <header>
-        <div id="header_wrap">
+        <div id="header_wrap" class="cf">
             <h1 class="main_title">感謝とユーモア</h1>
+            <!-- ↓スマホ用navメニュー -->
             <div id="hb_nemu">
                 <input type="checkbox" id="nav_input">
                 <label id="nav_open" for="nav_input"><span></span></label>
@@ -26,6 +27,18 @@
                         </ul>
                     </nav>
                 </div>
+            </div>
+            <!-- ↓PC用navメニュー -->
+            <div id="nav_nemu">
+                <nav class="main_nav">
+                    <ul class="cf">
+                        <li><a href="index.html">ホーム</a></li>
+                        <li><a href="css.html">CSS</a></li>
+                        <li><a href="scss.html">SCSS</a></li>
+                        <li><a href="javascript.html">JavaScript</a></li>
+                        <li><a href="wordpress.html">WordPress</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
 
@@ -47,13 +60,6 @@
                 <div class="dtdd_wrap"><dt>2021.02.02<span>JavaScript</span></dt><dd>Bingo作成</dd></div>
                 <div class="dtdd_wrap"><dt>2021.02.01<span>模写コーディング</span></dt><dd>Webサイト講座 チャレンジ</dd></div>
             </dl>
-            <!-- <ul>
-                <li>2021.02.03<span>CSS</span><p>オリジナル学習サイト作成</p></li>
-                <li>2021.02.03<span>JavaScript</span><p>カレンダー作成</p></li>
-                <li>2021.02.03<span>WordPress</span><p>WordPress開発マスター講座</p></li>
-                <li>2021.02.02<span>JavaScript</span><p>Bingo作成</p></li>
-                <li>2021.02.01<span>模写コーディング</span><p>Webサイト講座 チャレンジ</p></li>
-            </ul> -->
         </div>       
     </div>
     
@@ -61,6 +67,24 @@
     <div id="book">
         <div id="book_wrap">
             <h3 class="book_title">BOOK一覧</h3>
+            <div class="book_contents_wrap">
+                <div class="book_contents">
+                    <img src="images/machinenoowarini.png" alt="マチネの終わりに">
+                    <p class="book_title">マチネの終わりに <span>/ 平野 啓一郎</span></p>
+                </div>
+                <div class="book_contents">
+                    <img src="images/ratman.jpg" alt="ラットマン">
+                    <p class="book_title">ラットマン <span>/ 道尾 秀介</span></p>
+                </div>
+                <div class="book_contents">
+                    <img src="images/kurushikatta.jpg" alt="苦しかったときの話をしようか">
+                    <p class="book_title">苦しかったときの話をしようか <span>/ 森岡 毅</span></p>
+                </div>
+                <div class="book_contents">
+                    <img src="images/lifespan.jpg" alt="LIFE SPAN">
+                    <p class="book_title">LIFE SPAN <span>/ デビット・A・シンクレア</span></p>
+                </div>
+            </div>
         </div>       
     </div>
 
@@ -68,14 +92,52 @@
     <div id="site">
         <div id="site_wrap">
             <h3 class="site_title">参考サイト</h3>
-            <div class="site_list">
+            
+            <div class="site_contents_wrap">
                 <div class="site_contents">
-                    <a href="https://manablog.org/">
-                        <img src="images/blog.jpeg" alt="">
-                        <p class="site_text">マナブログ <span class="site_name">/ マナブ</span></p>
+                    <a href="https://manablog.org/" target="_blank">
+                        <img src="images/blog.jpeg" alt="マナブログ">
+                        <p class="site_name">マナブログ <span>/ マナブ</span></p>
+                    </a>
+                </div>
+                <div class="site_contents">
+                    <a href="https://guuten.net/" target="_blank">
+                        <img src="images/blog2.jpeg" alt="フリーランスで稼ぐ方法まとめ">
+                        <p class="site_name">フリーランスで稼ぐ方法まとめ <span>/ ふる</span></p>
                     </a>
                 </div>
             </div>
+
+            <div class="site_contents_wrap">
+                <div class="site_contents">
+                    <a href="https://hikopro.com/" target="_blank">
+                        <img src="images/blog3.jpg" alt="Hiko Pro BLOG">
+                        <p class="site_name">Hiko Pro BLOG <span>/ Hiko Pro</span></p>
+                    </a>
+                </div>
+                <div class="site_contents">
+                    <a href="https://prog-anchor.com/" target="_blank">
+                        <img src="images/blog.jpeg" alt="だんブログ" >
+                        <p class="site_name">だんブログ <span>/ だん</span></p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="site_contents_wrap">
+                <div class="site_contents">
+                    <a href="https://prog-8.com/dashboard" target="_blank">
+                        <img src="images/blog2.jpeg" alt="Progate">
+                        <p class="site_name">Progate<span></span></p>
+                    </a>
+                </div>
+                <div class="site_contents">
+                    <a href="https://dotinstall.com/home" target="_blank">
+                        <img src="images/blog3.jpg" alt="ドットインストール" >
+                        <p class="site_name">ドットインストール<span></span></p>
+                    </a>
+                </div>
+            </div>
+
         </div>       
     </div>
 
