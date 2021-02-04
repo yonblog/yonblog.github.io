@@ -1,119 +1,99 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>感謝とユーモア</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>感謝とユーモア</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8af1fef5c3.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="container bs">
-
-    <!-- ============================== ここからheader ============================== -->
+    <!-- ==================== ここからheader ==================== -->
     <header>
-      <div class="header_wrap">
-        <div class="headerlogo_wrap">
-          <h1><a href="index.html">感謝とユーモア</a></h1>
-          <input type="checkbox" id="nav_input" class="nav_invisible">
-          <label for="nav_input" class="sp_menu_wrap">
-            <div class="sp_menu"></div>
-            <div class="sp_menu"></div>
-            <div class="sp_menu"></div>
-          </label>
-          <div class="nav_contents">
-            <nav>
-              <ul>
-                <li><a href="css.html">CSS</a></li>
-                <li><a href="sass.html">SASS</a></li>
-                <li><a href="javascript.html">JavaScript</a></li>
-                <li><a href="php.html">PHP</a></li>
-                <li><a href="ruby.html">Ruby</a></li>
-                <li><a href="rubyonrails.html">Ruby on Rails</a></li>
-                <li><a href="sql.html">SQL</a></li>
-                <li><a href="copycoding.html">模写コーディング</a></li>
-              </ul>
-            </nav>
-          </div>
+        <div id="header_wrap">
+            <h1 class="main_title">感謝とユーモア</h1>
+            <div id="hb_nemu">
+                <input type="checkbox" id="nav_input">
+                <label id="nav_open" for="nav_input"><span></span></label>
+                <div id="nav_contents">
+                    <nav class="main_nav">
+                        <ul>
+                            <li><a href="index.html">ホーム</a></li>
+                            <li><a href="css.html">CSS</a></li>
+                            <li><a href="scss.html">SCSS</a></li>
+                            <li><a href="javascript.html">JavaScript</a></li>
+                            <li><a href="wordpress.html">WordPress</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </div>
-        <div class="headernav_wrap">
-          <nav>
-            <ul>
-              <li><a href="css.html">CSS</a></li>
-              <li><a href="sass.html">SASS</a></li>
-              <li><a href="javascript.html">JavaScript</a></li>
-              <li><a href="php.html">PHP</a></li>
-              <li><a href="ruby.html">Ruby</a></li>
-              <li><a href="rubyonrails.html">Ruby on Rails</a></li>
-              <li><a href="sql.html">SQL</a></li>
-              <li><a href="copycoding.html">模写コーディング</a></li>
-            </ul>
-            <div class="cf"></div>
-          </nav>
-        </div>
-        <div class="mainimg_wrap">
-          <img src="images/mainimg.jpg" alt="メインイメージ" class="s_img">
-        </div>
-      </div>
+
     </header>
 
-    <!-- ============================== ここからmain ============================== -->
-    <main>
-      <div class="main_wrap">
-        <section class="update_information_wrap">
-          <h2 class="h2_style">更新情報</h2>
-          <ul>
-            <li><span class="date">2021.01.25　Mon</span>PHP</li>
-            <li><span class="date">2021.01.22　Fri</span>学習サイト作成</li>
-            <li><span class="date">2021.01.22　Fri</span>JavaScript / ストップウォッチ</li>
-            <li><span class="date">2021.01.21　Thu</span>JavaScript / カレンダー</li>
-            <li><span class="date">2021.01.20　Wed</span>JavaScript / カレンダー</li>
-            <li><span class="date">2021.01.19　Tue</span>JavaScript / カレンダー</li>
-            <li><span class="date">2021.01.18　Mon</span>JavaScript / おみくじ・ビンゴシート</li>
-            <li><span class="date">2021.01.18　Mon</span>学習サイト作成</li>
-            <li><span class="date">2021.01.15　Fri</span>学習サイト作成</li>
-            <li><span class="date">2021.01.14　Thu</span>学習サイト作成</li>
-            <li><span class="date">2021.01.13　Wed</span>JavaScript ガチで学びたい人のWEB開発徹底実践</li>
-            <li><span class="date">2021.01.12　Tue</span>JavaScript Ⅵ / Progate</li>
-            <li><span class="date">2021.01.11　Mon</span>JavaScript Ⅴ / Progate</li>
-            <li><span class="date">2021.01.09　Sat</span>JavaScript Ⅰ・Ⅱ・ⅲ・Ⅳ / Progate</li>
-            <li><span class="date">2021.01.09　Sat</span>ラットマン / 道尾秀介</li>
-            <li><span class="date">2021.01.08　Fri</span>HTML&CSS初級編 / Progate</li>
-            <li><span class="date">2021.01.08　Fri</span>学習サイト作成</li>
-            <li><span class="date">2021.01.07　Thu</span>JavaScript ガチで学びたい人のWEB開発徹底実践</li>
-            <li><span class="date">2021.01.06　Wed</span>マチネの終わりに / 平野啓一郎</li>
-          </ul>
-        </section>
-      </div>
-    </main>
+    <!-- ==================== ここからmainimg ==================== -->
+    <div id="mainimg">
+        <div id="mainimg_wrap"></div>
+    </div>
 
-    <!-- ============================== ここからaside ============================== -->
-    <aside>
-      <div class="learning_site side_title_wrap bs">
-        <h3 class="side_title">学習サイト</h3>
-        <p><a href="https://code-begin.com/" target="_blank">Code Begin</a></p>
-        <p><a href="https://www.udemy.com/" target="_blank">Udemy</a></p>
-        <p><a href="https://prog-8.com/dashboard" target="_blank">Progate</a></p>
-        <p><a href="https://dotinstall.com/" target="_blank">ドットインストール</a></p>
-      </div>
-      <div class="information_site side_title_wrap bs">
-        <h3 class="side_title">情報サイト</h3>
-        <p><a href="https://manablog.org/" target="_blank">マナブログ</a></p>
-        <p><a href="https://guuten.net/" target="_blank">ふる</a></p>
-        <p><a href="https://hikopro.com/" target="_blank">Hiko Pro</a></p>
-      </div>
-      <div class="matter_site side_title_wrap bs">
-        <h3 class="side_title">案件サイト</h3>
-        <p><a href="https://crowdworks.jp/dashboard" target="_blank">クラウドワークス</a></p>
-      </div>
-    </aside>
-    <div class="cf"></div>
+    <!-- ==================== ここからupdate ==================== -->
+    <div id="update">
+        <div id="update_wrap">
+            <h3 class="update_title">更新情報</h3>
+            <dl>
+                <div class="dtdd_wrap"><dt>2021.02.03<span>CSS</span></dt><dd>オリジナル学習サイト作成</dd></div>
+                <div class="dtdd_wrap"><dt>2021.02.03<span>JavaScript</span></dt><dd>カレンダー作成</dd></div>
+                <div class="dtdd_wrap"><dt>2021.02.03<span>WordPress</span></dt><dd>WordPress開発マスター講座</dd></div>
+                <div class="dtdd_wrap"><dt>2021.02.02<span>JavaScript</span></dt><dd>Bingo作成</dd></div>
+                <div class="dtdd_wrap"><dt>2021.02.01<span>模写コーディング</span></dt><dd>Webサイト講座 チャレンジ</dd></div>
+            </dl>
+            <!-- <ul>
+                <li>2021.02.03<span>CSS</span><p>オリジナル学習サイト作成</p></li>
+                <li>2021.02.03<span>JavaScript</span><p>カレンダー作成</p></li>
+                <li>2021.02.03<span>WordPress</span><p>WordPress開発マスター講座</p></li>
+                <li>2021.02.02<span>JavaScript</span><p>Bingo作成</p></li>
+                <li>2021.02.01<span>模写コーディング</span><p>Webサイト講座 チャレンジ</p></li>
+            </ul> -->
+        </div>       
+    </div>
+    
+    <!-- ==================== ここからbook ==================== -->
+    <div id="book">
+        <div id="book_wrap">
+            <h3 class="book_title">BOOK一覧</h3>
+        </div>       
+    </div>
 
-    <!-- ============================== ここからfooter ============================== -->
+    <!-- ==================== ここから参考サイト ==================== -->
+    <div id="site">
+        <div id="site_wrap">
+            <h3 class="site_title">参考サイト</h3>
+            <div class="site_list">
+                <div class="site_contents">
+                    <a href="https://manablog.org/">
+                        <img src="images/blog.jpeg" alt="">
+                        <p class="site_text">マナブログ <span class="site_name">/ マナブ</span></p>
+                    </a>
+                </div>
+            </div>
+        </div>       
+    </div>
+
+    <!-- ==================== ここからfooter ==================== -->
     <footer>
-      <div class="footer_wrap">
-        <p>@Tomonori Yoshimura</p>
-      </div>
+        <div id="footer_wrap">
+            <nav class="footer_nav">
+                <ul>
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="css.html">CSS</a></li>
+                    <li><a href="scss.html">SCSS</a></li>
+                    <li><a href="javascript.html">JavaScript</a></li>
+                    <li><a href="wordpress.html">WordPress</a></li>
+                </ul>
+            </nav>
+            <p class="copylight">@Tomonori Yoshimura</p>
+        </div>
     </footer>
-  </div>
+    
 </body>
 </html>
