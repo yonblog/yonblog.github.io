@@ -223,7 +223,8 @@ div#update div#update_wrap h3.update_title {
 }
 
 div#update div#update_wrap dl {
-  margin: 10px;
+  margin: 10px auto;
+  width: 65%;
 }
 
 div#update div#update_wrap dl div.dtdd_wrap {
@@ -253,19 +254,19 @@ div#update div#update_wrap dl div.dtdd_wrap dd {
 }
 
 /* ========================================
-    book
+    work
 ========================================= */
-div#book {
+div#work {
   background-color: #4790BB;
   margin-bottom: 130px;
 }
 
-div#book div#book_wrap {
+div#work div#work_wrap {
   margin: 20px;
   height: auto;
 }
 
-div#book div#book_wrap h3.book_title {
+div#work div#work_wrap h3.work_title {
   text-align: center;
   font-size: 30px;
   font-weight: 600;
@@ -274,21 +275,31 @@ div#book div#book_wrap h3.book_title {
   margin-bottom: 50px;
 }
 
-div#book div#book_wrap div.book_contents_wrap div.book_contents {
+div#work div#work_wrap div.work_contents_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div#work div#work_wrap div.work_contents_wrap div.work_contents {
   padding-bottom: 50px;
   text-align: center;
 }
 
-div#book div#book_wrap div.book_contents_wrap div.book_contents img {
-  width: 200px;
+div#work div#work_wrap div.work_contents_wrap div.work_contents img {
+  width: 500px;
 }
 
-div#book div#book_wrap div.book_contents_wrap div.book_contents p.book_title {
+div#work div#work_wrap div.work_contents_wrap div.work_contents p.work_title {
   color: #fff;
   font-size: 23px;
+  margin-top: 35px;
 }
 
-div#book div#book_wrap div.book_contents_wrap div.book_contents p.book_title span {
+div#work div#work_wrap div.work_contents_wrap div.work_contents p.work_title span {
   font-size: 15px;
 }
 
@@ -299,17 +310,17 @@ div#site {
   margin-bottom: 130px;
 }
 
-div#site div#site_wrap {
-  margin: 20px;
-}
-
-div#site div#site_wrap h3.site_title {
+div#site h3.site_title {
   font-size: 30px;
   font-weight: 600;
   border-bottom: solid 2px #4790BB;
   display: inline-block;
   padding: 10px;
   margin-bottom: 50px;
+}
+
+div#site div#site_wrap {
+  margin: 20px;
 }
 
 div#site div#site_wrap div.site_contents_wrap {
@@ -322,7 +333,7 @@ div#site div#site_wrap div.site_contents_wrap div.site_contents {
 }
 
 div#site div#site_wrap div.site_contents_wrap div.site_contents a img {
-  height: 250px;
+  width: 50%;
 }
 
 div#site div#site_wrap div.site_contents_wrap div.site_contents a p.site_name {
@@ -444,30 +455,30 @@ footer div#footer_wrap p.copylight {
     font-size: 23px;
   }
   /* ========================================
-        book
+        work
     ========================================= */
-  div#book div#book_wrap {
+  div#work div#work_wrap {
     width: 1500px;
     margin: 0 auto;
     height: 550px;
   }
-  div#book div#book_wrap h3.book_title {
+  div#work div#work_wrap h3.work_title {
     margin-bottom: 50px;
   }
-  div#book div#book_wrap div.book_contents_wrap {
+  div#work div#work_wrap div.work_contents_wrap {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     text-align: center;
   }
-  div#book div#book_wrap div.book_contents_wrap div.book_contents {
+  div#work div#work_wrap div.work_contents_wrap div.work_contents {
     width: 500px;
     margin: 10px;
   }
-  div#book div#book_wrap div.book_contents_wrap div.book_contents img {
+  div#work div#work_wrap div.work_contents_wrap div.work_contents img {
     width: 200px;
   }
-  div#book div#book_wrap div.book_contents_wrap div.book_contents p.book_title {
+  div#work div#work_wrap div.work_contents_wrap div.work_contents p.work_title {
     margin-top: 30px;
     color: #fff;
     font-size: 20px;
